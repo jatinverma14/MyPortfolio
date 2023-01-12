@@ -1,0 +1,41 @@
+.navbar__container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(59, 58, 58);
+    padding: 1rem 2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 2;
+}
+
+.portfolioLogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logoImg{
+        width: 100px;
+        height: 80px;
+        border-radius: 1rem;
+    }
+}
+
+.navbarItems{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    background-color: aquamarine;
+    padding: 1rem 2rem;
+    li{
+        margin: 0 1.1rem;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+        }
+    }
+}
