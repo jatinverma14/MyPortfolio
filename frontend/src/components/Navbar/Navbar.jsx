@@ -32,8 +32,7 @@ const Navbar = () => {
   window.addEventListener("scroll", handleScrollDown);
   return (
     <>
-    <nav className={`navBar ${isScrollDown ? "navBar_scroll" : null}`} onScroll={handleScrollDown}></nav>
-      <div className="navbar__container">
+      <nav className={`navbar__container ${isScrollDown ? "navBar_scroll" : null}`} onScroll={handleScrollDown}>
         <div className="portfolioLogo">
           <img className="logoImg" src={images.logo} alt="img" />
         </div>
@@ -41,7 +40,9 @@ const Navbar = () => {
           {["Home", "About", "Skills", "Projects", "Linktree", "Contact"].map(
             (item) => (
               <li className="navbarLinkItem home_comp" key={`link-${item}`}>
-                <a href={`#${item}`} onClick={handleNavClick}>{item}</a>
+                <a href={`#${item}`} onClick={handleNavClick}>
+                  {item}
+                </a>
               </li>
             )
           )}
@@ -53,7 +54,7 @@ const Navbar = () => {
             <div className="navbarLine3"></div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

@@ -1,12 +1,11 @@
 .navbar__container {
   display: flex;
   width: 100%;
-  background-color: rgb(59, 58, 58);
+  // background-color: rgb(59, 58, 58);
   padding: 1rem 0rem;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
-
 }
 .portfolioLogo {
     display: flex;
@@ -22,10 +21,10 @@
 .navbarItems {
   display: flex;
   margin: auto;
-  border-radius: 2.5rem;
+  // border-radius: 2.5rem;
   font-size: 1.25rem;
   list-style: none;
-  background-color: white;
+  // background-color: white;
   padding: 1rem 2rem;
   li {
     margin: 0 0.8rem;
@@ -110,11 +109,9 @@
   body{
     overflow-x: hidden;
   }
-  .navBar{
+  .navBar__container {
     right: 0;
     height: 0;
-  }
-  .navBar__container {
     margin: 0px 3vh 0px 0px;
     background-color: black;
   }
@@ -201,24 +198,24 @@
 }
 
 .navBar_scroll {
-  background-color: rgba(86, 92, 86, 0.5);
+  background-color: rgba(150, 154, 150, 0.5);
   box-shadow: 0px 3px 10px black;
   .navbarLinkItem{
-    a{
-      color: white !important;
-    }
-    &::after{
-      background-color: rgb(104, 0, 104);
-    }
-    &::before{
-      background-color: rgb(104, 0, 104);
-    }
+    // a{
+    //   color: red !important;
+    // }
+    // &::after{
+    //   background-color: rgb(104, 0, 104);
+    // }
+    // &::before{
+    //   background-color: rgb(104, 0, 104);
+    // }
     &:hover a{
-      color: rgb(104, 0, 104);
-      text-shadow: 2px 2px 3px black;
+      color: grey;
+      // text-shadow: 2px 2px 3px black;
     }
   }
-  .navBar{
-    height: 3.5rem;
+  .navBar__container{
+    height: 2.5rem;
   }
 }

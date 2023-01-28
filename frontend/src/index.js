@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import './index.scss'
+import "./index.scss";
 
-import { Navbar } from "./components";
+import { Navbar, Header } from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Navbar />
+    {/* <Navbar /> */}
+    <Header />
   </React.StrictMode>
 );
