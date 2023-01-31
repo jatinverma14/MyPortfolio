@@ -16,9 +16,9 @@ const scaleVariant = {
 }
 
 const socialImg = [
+    images.linkedinLogo,
     images.githubLogo,
     images.instagramLogo,
-    images.linkedinLogo,
     images.twitterLogo,
 ]
 
