@@ -12,7 +12,6 @@
         width: 100%;
         justify-content: center;
     }
-
     .headerDetails{
         display: flex;
         align-items: center;
@@ -78,7 +77,7 @@
                 }
             }
             @media screen and (max-width: 580px) {
-                margin-top: -6rem;
+                margin-top: 2rem;
                 .myWork{
                     margin-top: 1rem;
                 }
@@ -127,21 +126,10 @@
         }
         @media screen and (max-width: 580px) {
             .socialAccounts{
-                justify-content: center;
-            }
-        }
-        @media screen and (max-width: 450px) {
-            .socialAccounts{
-                right: 1rem;
-                justify-content: end;
+                display: none;
             }
         }
     }
-    @media screen and (max-width: 580px) {
-        height: max-content;
-        
-    }
-
 }
 
 .myNameAndWork, .myWork{
@@ -202,22 +190,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 8rem;
-    margin-left: 6rem;
-    .socialLogoImg{
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-        padding-bottom: 10px;
-        &:hover{
-            transform: scale(1.14);
-            transition-duration: 0.5s;
-        }
+    margin: 0rem 8rem 0rem 6rem;
+}
+
+.socialLogoImg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    &:hover{
+        transform: scale(1.14);
+        transition-duration: 0.5s;
     }
 }
 
 @media screen and (max-width: 900px) {
     .myNameAndWork, .myWork{
         width: 17rem;
+    }
+}
+
+.socialAccountMobile{
+    display: none;
+    @media screen and (max-width: 580px) {
+            display: flex;
+            background-color: #edf2f8;
+            justify-content: center;
+            .socialLogoImg{
+                padding: 0.5rem 1rem;
+                height: 30px;
+                width: 30px;
+            }
     }
 }

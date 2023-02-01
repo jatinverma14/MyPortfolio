@@ -59,6 +59,15 @@ const Header = () => {
             }
         </motion.div>
       </div>
+      <motion.div className="socialAccountMobile" variant={scaleVariant} whileInView={scaleVariant.whileInView}>
+            {
+                socialImg.map((imageName, index) => (
+                    <div className="socialLogo" key={`socialLogo-${index}`}>
+                        <img className="socialLogoImg" src={imageName} alt="logoImg" />
+                    </div>
+                ))
+            }
+        </motion.div>
     </>
   );
 };
