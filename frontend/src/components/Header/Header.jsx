@@ -16,10 +16,22 @@ const scaleVariant = {
 }
 
 const socialImg = [
-    images.linkedinLogo,
-    images.githubLogo,
-    images.instagramLogo,
-    images.twitterLogo,
+  {
+    imgLink: images.linkedinLogo,
+    imgHref: 'https://www.linkedin.com/in/jatin-verma-2792ba200/',
+  },
+  {
+    imgLink: images.githubLogo,
+    imgHref: 'https://github.com/jatinverma14',
+  },
+  {
+    imgLink: images.instagramLogo,
+    imgHref: 'https://www.instagram.com/jatinverma1410/',
+  },
+  {
+    imgLink: images.twitterLogo,
+    imgHref: 'https://twitter.com/jatinve16352670',
+  },
 ]
 
 const Header = () => {
@@ -30,15 +42,22 @@ const Header = () => {
             <motion.div className="headerDetails" whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }}>
               <div className="leftPortion">
                 <div className="myNameAndWork">
-                  <span className="hiEmoji">👋</span>
+                  <motion.div
+                  className="hiEmoji"
+                    animate={{
+                      scale: [1, 2, 2, 1, 1],
+                      rotate: [0, 0, 270, 270, 0],
+                      borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                    }}
+                  >
+                    👋
+                    </motion.div>
                   <div className="myName">
                     <p className="pText pTextName">Hi, I am</p>
                     <h1 className="hText">Jatin Verma</h1>
                   </div>
                 </div>
                   <div className="myWork">
-                    {/* <p className="pText pTextWork">Aspiring Software Developer</p> */}
-                    {/* <p className="pText pTextWork">Full stack Web Developer</p> */}
                     <p className="pText pTextWork">Competitive Programmer</p>
                   </div>
                 </div>
@@ -51,20 +70,20 @@ const Header = () => {
         </div>
         <motion.div className="socialAccounts" variant={scaleVariant} whileInView={scaleVariant.whileInView}>
             {
-                socialImg.map((imageName, index) => (
-                    <div className="socialLogo" key={`socialLogo-${index}`}>
-                        <img className="socialLogoImg" src={imageName} alt="logoImg" />
-                    </div>
+                socialImg.map((socialImg, index) => (
+                    <motion.div whileHover={{scale: 1.14}} transition={{duration: 0.25, type:'tween'}} className="socialLogo" key={`socialLogo-${index}`}>
+                        <a href={socialImg.imgHref} target="__blank"><img className="socialLogoImg" src={socialImg.imgLink} alt="logoImg" /></a>
+                    </motion.div>
                 ))
             }
         </motion.div>
       </div>
       <motion.div className="socialAccountMobile" variant={scaleVariant} whileInView={scaleVariant.whileInView}>
             {
-                socialImg.map((imageName, index) => (
-                    <div className="socialLogo" key={`socialLogo-${index}`}>
-                        <img className="socialLogoImg" src={imageName} alt="logoImg" />
-                    </div>
+                socialImg.map((socialImg, index) => (
+                    <motion.div whileHover={{scale: 1.14}} transition={{duration: 0.25, type:'tween'}} className="socialLogo" key={`socialLogo-${index}`}>
+                        <a href={socialImg.imgHref} target="__blank"><img className="socialLogoImg" src={socialImg.imgLink} alt="logoImg" /></a>
+                    </motion.div>
                 ))
             }
         </motion.div>
