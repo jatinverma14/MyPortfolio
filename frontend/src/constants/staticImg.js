@@ -6,8 +6,12 @@ import linkedinLogo from "../assets/linkedinLogo.png";
 import githubLogo from "../assets/githubLogo.png";
 import twitterLogo from "../assets/twitterLogo.png";
 import circle from "../assets/circle.svg";
+import codechef from "../assets/codechef.svg";
+import gfg from "../assets/gfg.svg";
+import hackerrank from "../assets/hackerrank.svg";
+import codeforces from "../assets/codeforces.png";
 
-export default {
+const expImages = {
   logo,
   myTempImg,
   twitterLogo,
@@ -15,4 +19,10 @@ export default {
   githubLogo,
   linkedinLogo,
   circle,
+  codechef,
+  codeforces,
+  gfg,
+  hackerrank,
 };
+
+export default expImages;

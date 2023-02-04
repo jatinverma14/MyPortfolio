@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column;
     background-color: #edf2f8;
-    // width: 100%;
-    height: 100vh;
+    height: max-content;
 }
 
 .aboutHeading{
@@ -13,6 +12,9 @@
     font-weight: bold;
     margin: 2rem 0rem 2rem 0rem;
     font-family: 'Joan', serif;
+    @media screen and (max-width: 580px) {
+        font-size: 2.2rem;
+    }
 }
 
 .aboutMepara{
@@ -21,12 +23,17 @@
     margin: auto;
     text-align:justify;
     font-size: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    @media screen and (max-width: 600px) {
+        font-size: 1.3rem;
+    }
 }
 
 .codingProfileLinks{
     display: flex;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     a{
         background-color: black;
         color: white;
@@ -34,5 +41,54 @@
         padding: 0.5rem 1rem 0.5rem 1rem;
         border-radius: 50px;
         text-decoration: none;
+        @media screen and (max-width: 950px) {
+            margin: 0rem 0.6rem 0rem 0rem;    
+            font-size: 1rem;        
+        }
+    }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        .codingProf{
+            flex-wrap: wrap;
+            margin-top: 0.7rem;
+        }
+    }
+}
+
+.codingProf{
+    display: flex;
+}
+
+.download{
+    position: absolute;
+    right: 0;
+    margin-right: 8rem;
+    a{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 50px;
+    }
+    @media screen and (max-width: 1300px) {
+        display: none;        
+    }
+}
+
+.downloadRes{
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+    margin-left: 10%;
+    display: none;
+    a{
+        &:hover{
+            color: lightgreen;
+        }
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 1300px) {
+        display: block;
     }
 }

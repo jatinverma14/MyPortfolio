@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from "framer-motion";
+import { images } from "../../constants";
 
 import "./about.scss";
 
@@ -6,18 +8,26 @@ const codingProLink = [
     {
         platform: 'Codeforces',
         link: 'https://codeforces.com/profile/JV1410',
-    },
-    {
+        imgLink: images.codeforces,
+        altTag: 'Codeforces',
+      },
+      {
         platform: 'Codechef',
         link: 'https://www.codechef.com/users/jv1410',
-    },
-    {
+        imgLink: images.codechef,
+        altTag: 'Codechef',
+      },
+      {
         platform: 'GeeksForGeeks',
         link: 'https://auth.geeksforgeeks.org/user/jatinverma14/',
-    },
-    {
+        imgLink: images.gfg,
+        altTag: 'GFG',
+      },
+      {
         platform: 'Hackerrank',
         link: 'https://www.hackerrank.com/jv_jatinverma_jv?hr_r=1',
+        imgLink: images.hackerrank,
+        altTag: 'Hackerrank',
     },
 ]
 
@@ -54,15 +64,19 @@ const About = () => {
           several sports events.
           <br />
             <div className="codingProfileLinks">
-                <h2>Coding Profiles: </h2>
-                {
-                    codingProLink.map((data, index)=>(
-                        <div className="profile">
-                            <a href={data.link} target="__blank">{data.platform}</a>
-                        </div>
-                    ))
-                }
+                <h2>CodingProfiles: </h2>
+                <div className="codingProf">
+                  {
+                      codingProLink.map((data, index)=>(
+                          <div className="profile">
+                              <a href={data.link} target="__blank">{data.platform}</a>
+                          </div>
+                      ))
+                  }
+                </div>
+              <motion.div className="download" whileHover={{scale:1.14}} transition={{duration: 0.5, type:"tween"}}><a href="##">Download Resume</a></motion.div>
             </div>
+            <div className="download downloadRes"><a href="##">Download Resume</a></div>
         </div>
       </div>
     </>
