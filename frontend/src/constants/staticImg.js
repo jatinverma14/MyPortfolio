@@ -1,6 +1,5 @@
 // for exporting images
 import logo from "../assets/tempLogo.png";
-import myTempImg from "../assets/myTempImg.png";
 import instagramLogo from "../assets/instagramLogo.png";
 import linkedinLogo from "../assets/linkedinLogo.png";
 import githubLogo from "../assets/githubLogo.png";
@@ -10,10 +9,10 @@ import codechef from "../assets/codechef.svg";
 import gfg from "../assets/gfg.svg";
 import hackerrank from "../assets/hackerrank.svg";
 import codeforces from "../assets/codeforces.png";
+import resume from "../assets/Resume.pdf";
 
 const expImages = {
   logo,
-  myTempImg,
   twitterLogo,
   instagramLogo,
   githubLogo,
@@ -23,6 +22,7 @@ const expImages = {
   codeforces,
   gfg,
   hackerrank,
+  resume,
 };
 
 export default expImages;
