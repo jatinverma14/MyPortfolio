@@ -3,11 +3,21 @@ export default {
     title: 'About',
     type: 'document',
     fields: [
+      // {
+      //   name: 'description',
+      //   title: 'Description',
+      //   type: 'text',
+      // },
       {
         name: 'description',
+        type: 'array',
         title: 'Description',
-        type: 'text',
-      },
+        of: [
+          {
+            type: 'block'
+          }
+        ]
+      }
     ],
   }
   
