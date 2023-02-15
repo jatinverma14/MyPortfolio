@@ -1,5 +1,12 @@
 // for exporting all the files inside component folder
-export { default as Navbar } from "./Navbar/Navbar";
-export { default as Header } from "./Header/Header";
-export { default as About } from "./AboutMe/About";
-export { default as Skills } from "./Skills/Skills";
+import Navbar from "./Navbar/Navbar";
+import Header from "./Header/Header";
+import About from "./AboutMe/About";
+import Skills from "./Skills/Skills"
+
+export {
+    Navbar,
+    Header,
+    About,
+    Skills,
+}

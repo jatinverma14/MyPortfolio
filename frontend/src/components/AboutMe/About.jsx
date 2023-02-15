@@ -51,7 +51,7 @@ const About = () => {
         <div className="aboutMepara">
           {
             ((Aboutt != null)?Aboutt.map((data, index) => (
-              <div> {data.children[0].text} </div>
+              <div key={index}> {data.children[0].text} </div>
             )): '')
           }
           <div className="codingProfileLinks">
