@@ -9,16 +9,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'content',
-      type: 'array',
-      title: 'Content',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
-    },
-    {
       name: 'description',
       title: 'Description',
       type: 'string',

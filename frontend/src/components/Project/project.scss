@@ -1,0 +1,41 @@
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f7ff;
+}
+
+.projectHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.projects{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectDesc{
+    margin: 0rem 0rem 1.5rem 2.7rem;
+    &:hover{
+        transform: scale(1.04);
+        transition-duration: 0.5s;
+    }
+}
+
+.projectLink{
+    padding-top: 10px;
+    a{
+        background-color: rgb(81, 81, 81);
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        &:hover{
+            background-color: black;
+        }
+    }
+}

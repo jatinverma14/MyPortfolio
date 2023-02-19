@@ -29,7 +29,6 @@
   margin-top: 3rem;
   font-size: 1.1rem;
   display: flex;
-
   @media screen and (max-width: 1300px) {
     width: 100%;
     flex-direction: column;
@@ -82,7 +81,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+    background-color: #ffffff;
 
     img {
       width: 50%;
