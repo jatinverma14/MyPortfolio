@@ -23,7 +23,6 @@ const Project = () => {
           {
             ((projectDetails != null)?projectDetails.map((data, index) => (
               <ProjectCard key = {index} name = {data.name} description = {data.description} link = {data.githubrepolink} img = {urlFor(data.imgurl)}/>
-              // console.log(data.githubrepolink)
             )):'')
           }
         </div>

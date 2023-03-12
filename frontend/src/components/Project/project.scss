@@ -18,6 +18,21 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 970px) and (min-width: 780px){
+    .projectDesc > .MuiPaper-root > .MuiButtonBase-root > .MuiCardMedia-root, .projectDesc{
+        width: 17rem;
+    }
+    .projectName{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .projects{
+        justify-content: center;
+    }
+}
+
 .projectDesc{
     margin: 0rem 0rem 1.5rem 2.7rem;
     &:hover{

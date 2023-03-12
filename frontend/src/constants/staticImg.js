@@ -10,6 +10,8 @@ import gfg from "../assets/gfg.svg";
 import hackerrank from "../assets/hackerrank.svg";
 import codeforces from "../assets/codeforces.png";
 import resume from "../assets/Resume.pdf";
+import email from "../assets/email.png";
+import mobile from "../assets/mobile.png";
 
 const expImages = {
   logo,
@@ -23,6 +25,8 @@ const expImages = {
   gfg,
   hackerrank,
   resume,
+  email,
+  mobile,
 };
 
 export default expImages;

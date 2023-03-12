@@ -1,0 +1,148 @@
+.contactContainer {
+  background-color: #edf2f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.headTopText{
+  padding-top: 1rem;
+}
+
+.headText {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.phoneNum, .mail, .textInp{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.mailPhoneCards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 3em;
+
+  .cardDetails {
+    min-width: 290px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 0.7rem;
+    }
+
+    p {
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+    &:hover {
+      box-shadow: 0 0 25px #cccccc;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.msgForm {
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  display: flex;
+  align-self: center;
+
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #edf2f8;
+
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: #ffffff;
+
+      font-family: "DM Sans", sans-serif;
+      color: #313bac;
+      outline: none;
+    }
+
+    textarea {
+      height: 170px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px #cccccc;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #313bac;
+    font-weight: 500;
+    color: white;
+    outline: none;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+    &:hover {
+      background-color: #2430af;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+.headTextBottom{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

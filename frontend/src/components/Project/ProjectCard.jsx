@@ -9,7 +9,7 @@ import "./project.scss";
 export default function ActionAreaCard(props) {
   return (
     <div className="projectDesc">
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} >
         <CardActionArea>
           <CardMedia
             component="img"
@@ -19,7 +19,9 @@ export default function ActionAreaCard(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {props.name}
+              <div className="projectName">
+                {props.name}
+              </div>
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {props.description}
