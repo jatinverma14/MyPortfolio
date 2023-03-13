@@ -7,6 +7,15 @@ const Navbar = () => {
   const [isCrossBurger, setIsCrossBurger] = useState(false);
   const [isScrollDown, setIsScrollDown] = useState(false);
 
+  const navItems = [
+    "Home", 
+    "About",
+    "Skills",
+    "Projects",
+    "Resume",
+    "Contact",
+  ]
+
   const handleHamburgerClick = (event) => {
     setIsMobView(!isMobView);
     setIsCrossBurger(!isCrossBurger);
@@ -37,12 +46,20 @@ const Navbar = () => {
           <img className="logoImg" src={images.logo} alt="img" />
         </div>
         <ul className={`navbarItems ${isMobView ? "mobileView" : null}`}>
-          {["Home", "About", "Skills", "Projects", "Linktree", "Contact"].map(
+          {navItems.map(
             (item) => (
               <li className="navbarLinkItem home_comp" key={`link-${item}`}>
-                <a href={`#${item}`} onClick={handleNavClick}>
-                  {item}
-                </a>
+                {
+                  ((item === "Resume")?(
+                    <a href="https://drive.google.com/file/d/1AOsKwLq3sdR9CWWoznTYy4N2QZirJ6rx/view?usp=sharing" target="xyz">
+                      {item}
+                    </a>
+                  ):(
+                    <a href={`#${item}`} onClick={handleNavClick}>
+                      {item}
+                    </a>
+                  ))
+                }
               </li>
             )
           )}

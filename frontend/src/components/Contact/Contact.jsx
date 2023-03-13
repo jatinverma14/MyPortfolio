@@ -37,7 +37,7 @@ const Contact = () => {
   
   return (
     <>
-    <div className="contactContainer">
+    <div className="contactContainer" id="Contact">
       <h2 className="headText headTopText">Take a coffee & chat with me</h2>
 
       <div className="mailPhoneCards">

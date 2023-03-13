@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <>
-      <div id="homePage" className="headerContainer">
+      <div id="Home" className="headerContainer">
         <div className="portion0">
           <motion.div
             className="headerDetails"
