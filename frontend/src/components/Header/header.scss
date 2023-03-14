@@ -248,3 +248,14 @@
         transform: rotate(0deg);
     }
 }
+.upArrow{
+    bottom: 1rem;
+    right: 2rem;
+    position: fixed;
+}
+.upArrowImg{
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+    border-radius: 100%;
+}

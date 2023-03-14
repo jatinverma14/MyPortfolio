@@ -128,7 +128,7 @@
     margin: auto;
     margin-top: 2rem;
     font-family: "DM Sans", sans-serif;
-
+    margin-bottom: 1rem;
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
     &:hover {
@@ -145,4 +145,8 @@
 .headTextBottom{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.sendButton{
+  margin-bottom: 1rem;
 }

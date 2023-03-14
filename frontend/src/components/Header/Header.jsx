@@ -118,6 +118,11 @@ const Header = () => {
             </motion.div>
           ))}
         </motion.div>
+        <div className="upArrow">
+          <a href="#Home">
+            <img className="upArrowImg" src={images.arrow} alt="up-arrow" />
+          </a>
+        </div>
       </div>
       <motion.div
         className="socialAccountMobile"

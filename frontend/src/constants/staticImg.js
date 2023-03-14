@@ -12,6 +12,7 @@ import codeforces from "../assets/codeforces.png";
 import resume from "../assets/Resume.pdf";
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
+import arrow from "../assets/arrow.png";
 
 const expImages = {
   logo,
@@ -27,6 +28,7 @@ const expImages = {
   resume,
   email,
   mobile,
+  arrow,
 };
 
 export default expImages;
